@@ -1,18 +1,18 @@
 import React from "react";
 import "./App.css";
-
-import Asteroids from './components/Asteroids'
 import Galaxy from './components/Galaxy'
+import Asteroids from './components/Asteroids'
+
 
 function App() {
   return (
     <div className="App">
-      <p>
+      {<p>
         Read through the instructions in the README.md file to build your NASA
         app! Have fun 🚀!
-      </p>
+      </p>}
       <Galaxy />
-      <Asteroids />
+      
     </div>
   );
 }

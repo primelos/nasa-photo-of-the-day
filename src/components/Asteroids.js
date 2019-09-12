@@ -1,11 +1,13 @@
-import React from "react"
+import React from "react";
 
 const Asteroids = props => {
-
+console.log(props)
     return(
-        <div className="pic1-info" key={props.id}>
-            <nav>{props.date} </nav>
-            <div> {props.hdurl}</div>
+        <div className="pic1-info" key={props.index}>
+            <p>Date:{props.date} </p>
+            <img src = {props.img}  alt="space image"/>
+            <p>Read: {props.description}</p>
+            <p>Professor: {props.copyright}</p>
         </div>
     )
 }
